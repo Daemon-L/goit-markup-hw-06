@@ -426,12 +426,59 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
 
-            <button type="button" class="modal-button" data-modal-close>
-               <svg width="11" height="11">
-                   <use href="./images/decoration/symbol-defs.svg#close"></use>
-               </svg>
-            </button>
+        <button type="button" class="modal-button" data-modal-close>
+            <svg width="11" height="11">
+                 <use href="./images/decoration/symbol-defs.svg#close"></use>
+            </svg>
+        </button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
 
+        <form action="">
+            <label class="modal-form">
+                
+                    Имя
+                <span class="modal-icons">
+                    <input class="modal-fields" type="text" name="user-name" />
+                    <svg width="12" height="12" class="modal-icon">
+                        <use href="./images/decoration/modal.svg#modal-name"></use>
+                    </svg>
+                </span>
+            </label>
+
+            <label class="modal-form">
+                Телефон
+                <span class="modal-icons">
+                <input class="modal-fields" type="tel" name="user-tel" />
+                <svg width="13" height="13" class="modal-icon">
+                    <use href="./images/decoration/modal.svg#modal-tell"></use>
+                </svg>
+            </span>
+            </label>
+
+            <label class="modal-form">
+                Почта
+                <span class="modal-icons">
+                <input class="modal-fields" type="email" name="user-email" />
+                <svg width="15" height="12" class="modal-icon">
+                    <use href="./images/decoration/modal.svg#modal-envelope"></use>
+                </svg>
+            </span>
+            </label>
+
+            <label class="modal-form">Комментарий
+                <textarea name="comment" class="modal-comment" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
+            </label>
+            
+            <div class="modal-checkbox">
+            <input type="checkbox" name="agreement" value="agreement" id="accept-policy">
+            <label class="modal-form agreement" for="accept-policy">Соглашаюсь с рассылкой и принимаю <a href="#" class="agreement-link">Условия договора</a></label>
+            </div>   
+                
+            
+
+            <button type="submit" class="submit-button">Отправить</button>
+
+        </form>
 
         </div>
     </div>
@@ -440,3 +487,5 @@
 </body>
 
 </html>
+
+
