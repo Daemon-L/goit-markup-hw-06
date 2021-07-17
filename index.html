@@ -70,7 +70,7 @@
 
         <section class="advantages-section section">
             <div class="container">
-                <h2 class="hidden">Наши преимущества</h2>
+                <h2 class="visually-hidden">Наши преимущества</h2>
 
                 <ul class="list advantag-list">
                     <li class="advantag-item">
@@ -452,7 +452,7 @@
             <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
 
             <form class="modal-form">
-                <label class="modal-form-field">
+                <label>
                     Имя
                     <span class="modal-box">
                         <input class="modal-fields" type="text" name="user-name" />
@@ -462,7 +462,7 @@
                     </span>
                 </label>
 
-                <label class="modal-form-field">
+                <label>
                     Телефон
                     <span class="modal-box">
                         <input class="modal-fields" type="tel" name="user-tel" />
@@ -472,7 +472,7 @@
                     </span>
                 </label>
 
-                <label class="modal-form-field">
+                <label>
                     Почта
                     <span class="modal-box">
                         <input class="modal-fields" type="email" name="user-email" />
@@ -482,17 +482,17 @@
                     </span>
                 </label>
 
-                <label class="modal-form-field">Комментарий
+                <label>Комментарий
                     <textarea name="comment" class="modal-comment" id="" cols="30" rows="10"
                         placeholder="Введите текст"></textarea>
                 </label>
 
-                <div class="modal-checkbox">
-                    <input type="checkbox" name="agreement" value="agreement" id="accept-policy">
-                    <label class="modal-agreement" for="accept-policy">Соглашаюсь с рассылкой и принимаю <a href="#"
-                            class="agreement-link">Условия договора</a></label>
-                </div>
-
+                
+                <input class="modal-checkbox visually-hidden" type="checkbox" name="agreement" value="agreement" id="accept-policy">
+                <label class="modal-agreement" for="accept-policy">
+                    Соглашаюсь с рассылкой и принимаю&nbsp; 
+                    <a href="#"class="agreement-link">Условия договора</a>
+                </label>
                 <button type="submit" class="submit-button">Отправить</button>
 
             </form>
@@ -504,3 +504,5 @@
 </body>
 
 </html>
+
+<!-- visually-hidden -->
