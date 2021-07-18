@@ -809,17 +809,16 @@ fill не меняет цвет иконки
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: transparent;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
   cursor: pointer;
 
-  transition-property: border-color, box-shadow;
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button:hover {
-  border-color: var(--secondary-font-collor);
-  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+  fill: var(--accent-color);
 }
 
 .modal-button:focus {
@@ -842,6 +841,12 @@ fill не меняет цвет иконки
 .modal-form {
   display: flex;
   flex-direction: column;
+}
+
+.modal-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
 }
 
 .modal-fields {
@@ -876,6 +881,9 @@ fill не меняет цвет иконки
 }
 
 .modal-icon {
+  width: 18px;
+  height: 18px;
+
   display: block;
   position: absolute;
   top: 50%;
@@ -899,6 +907,13 @@ fill не меняет цвет иконки
   outline: none;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-comment::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-comment:hover,
